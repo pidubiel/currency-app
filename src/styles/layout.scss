@@ -1,9 +1,80 @@
 .main-container {
-  max-width: 1200px;
+  max-width: 1120px;
   margin: 0 auto;
+  @media screen and (max-width: 1120px) {
+    padding: 0 20px;
+  }
 }
 
 .header {
   margin-top: 40px;
   margin-bottom: 20px;
+}
+
+body {
+  background-color: rgb(1, 5, 22);
+  color: rgb(211, 217, 245);
+}
+
+.transactions {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  .recent {
+    flex-basis: 55%;
+  }
+  .highest {
+    flex-basis: 40%;
+  }
+  @media screen and (max-width: 1120px) {
+    flex-direction: column;
+    .highest {
+      margin-top: 30px;
+    }
+  }
+}
+
+.new-transaction {
+  max-width: 600px;
+  margin-top: 20px;
+  input,
+  label {
+    display: block;
+    width: 100%;
+  }
+  label {
+    margin-bottom: 5px;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .submit {
+    max-width: 100px;
+    display: inline-block;
+  }
+}
+
+.table {
+  margin-top: 20px;
+  width: 100%;
+  th,
+  td {
+    text-align: left;
+    padding: 5px 0;
+    font-weight: 200;
+  }
+  th {
+    font-weight: 800;
+  }
+  th:last-child,
+  td:last-child {
+    text-align: right;
+  }
+}
+
+.summary {
+  border-top: 1px solid white;
+  td {
+    font-weight: 800;
+  }
 }
