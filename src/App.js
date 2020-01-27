@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/main.scss';
+import Transaction from './components/Transaction';
 
 function App() {
   return (
@@ -36,22 +37,9 @@ function App() {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Transaction 1</td>
-                <td>10</td>
-                <td>47,50</td>
-                <td>
-                  <button>Remove</button>
-                </td>
-              </tr>
-              <tr>
-                <td>Transaction 2</td>
-                <td>100</td>
-                <td>475,0</td>
-                <td>
-                  <button>Remove</button>
-                </td>
-              </tr>
+              <Transaction name='Transaction 0' euro='1' pln='4.76' />
+              <Transaction name='Transaction 1' euro='10' pln='47.6' />
+              <Transaction name='Transaction 2' euro='100' pln='476' />
               <tr className='summary'>
                 <td></td>
                 <td>2827</td>
